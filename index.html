@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>VisImages</title>
+   <link rel = "icon" href =  
+   "images/logo.png" 
+      type = "image/x-icon"> 
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+   <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+      </script>
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+
+   <!-- end loader -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="#">VisImages</a>
+                           </li>
+                           <li class="nav-item2">
+                              <a class="nav-link2" href="https://github.com/VisImages/data">Download</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div id="banner1" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#banner1" data-slide-to="0" class="active"></li>
+            <li data-target="#banner1" data-slide-to="1"></li>
+            <li data-target="#banner1" data-slide-to="2"></li>
+            <li data-target="#banner1" data-slide-to="3"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <h1> VisImages: Images in <br>Visualization Publications</h1>
+                              <p style="text-align: justify;">We aim to deliver a high-quality dataset with large scale
+                                 of visualization publication images and diverse categories of visualizations.</p>
+                              <a href="#p">Read the Paper</a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure>
+                                 <img src="images/pct1.png" alt="#" />
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item ">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <h1> Pipeline</h1>
+                              <p>During the process, we adopt a series of measures, such as “gold standard,” majority voting, and sampling test, to ensure the data correctness.</p>
+                              <a href="#Methodology">Read More</a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure>
+                                 <img src="images/pct2.png" alt="#" />
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item ">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <h1>Dataset</h1>
+                              <p>We have obtained a dataset with 12,267 images from IEEE VAST and IEEE InfoVis images
+                                 with 12,057 captions and 35,096 annotated boxes.</p>
+                              <a href="#Dataset">Read More</a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure>
+                                 <img src="images/pct3.png" alt="#" />
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item ">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row d_flex">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <h1> Usage Scenarios </h1>
+                              <p>We introduce four usage scenarios to show the usage of different data in VisImages.
+                              </p>
+                              <a href="#Scenario">Read More</a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure>
+                                 <img src="images/pct5.png" alt="#" />
+                              </figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- end banner -->
+   <!-- team -->
+   <div class="team">
+      <div class="preface">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-10 offset-md-1">
+                  <div class="titlepage">
+                     <div id="preface">
+                        <h2>Abstract</h2>
+                        <!-- <div class="row"> -->
+                        <p>
+                           Images in visualization publications contain rich information, such as novel visual designs, model details, and experiment results. Constructing such an image corpus can contribute to the community in many aspects, including literature analysis from the perspective of visual representations, empirical studies on visual memorability, and machine learning research for chart detection. This study presents VisImages, a high-quality and large-scale image corpus collected from visualization publications. VisImages contain fruitful and diverse annotations for each image, including captions, types of visual representations, and bounding boxes. First, we algorithmically extract the images associated with captions and manually correct the errors. Second, to categorize visualizations in publications, we extend and iteratively refine the existing taxonomy through a multi-round pilot study. Third, guided by this taxonomy, we invite senior visualization practitioners to annotate visual representations that appear in each image. In this process, we borrow techniques such as “gold standards” and majority voting for quality control. Finally, we recruit the crowd to draw bounding boxes for visual representations in the images. The resulting corpus contains 35,096 annotated visualizations from 12,267 images with 12,057 captions in 1397 papers from VAST and InfoVis. We demonstrate the usefulness of VisImages through the following four use cases: 1) analysis of color usage in VAST and InfoVis papers across years, 2) discussion of the researcher preference on visualization types, 3) spatial distribution analysis of visualizations in visual analytic systems, and 4) training visualization detection models.
+                        </p>
+                        <!-- </div> -->
+                        <!-- <div style="height:70px;"></div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services -->
+      <a name="Methodology"></a>
+      <div class="Methodology">
+         <div class="services">
+            <div class="container">
+               <!-- <div class="col-md-10 offset-md-1">
+                  <i><img class="Methodology_img" src="images/a6.png" alt="#" /></i>
+               </div> -->
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div id="serv_hover" class="titlepage">
+                        <h2 class="Methodology_title">Pipeline</h2>
+                        <p>To ensure the quality of annotation with limited professionals, we adopt a construction pipeline with carefully designed tasks and cross-validation procedures.We firstly build a taxonomy for visualization based on prior work and a multi-round pilot study.
+                        With the taxonomy, we recruit senior visualization practitioners to annotate chart types and employ the crowd for bounding box annotation. </p>
+                        <img src="images/a6.png" />
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box">
+                        <i><img src="images/service1.png" alt="#" /></i>
+                        <h3>Image Extraction</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                        <p>In this paper, we focus on 2D static visualizations rather than photos, comics, and 3D
+                           renderings.
+                           Therefore, we collected the images from VAST (IEEE Conference on Visual Analytics Science &
+                           Technology) and InfoVis (IEEE Conference on Information Visualization), and excluded SciVis
+                           (IEEE Conference on Scientific Visualization), where a large amount of 3D renderings exist.
+                        </p>
+
+                        <p>We borrowed a paper list from vispubdata.org, which has provided the title and digital object
+                           identifier (DOI) of IEEE VIS papers. The vispubdata.org has assigned each paper a label among
+                           <i>Vis</i>, <i>VAST</i>, <i>InfoVis</i>, and <i>SciVis</i>. We selected the papers with
+                           the label of <i>VAST</i> and <i>InfoVis</i>.
+                           <br>In total, we have processed <strong><span style="color:#fbb03b;">1397</span></strong>
+                           papers in VAST and InfoVis from <strong><span style="color:#fbb03b;">1996</span></strong> to
+                           <strong><span style="color:#fbb03b;">2018</span></strong>, and collected <strong><span
+                                 style="color:#fbb03b;">12,267</span></strong> images with <strong><span
+                                 style="color:#fbb03b;">12,057</span></strong> captions.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box">
+                        <i><img src="images/service2.png" alt="#" /></i>
+                        <h3>Taxonomy</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                        <!-- <p><strong><span style="color:#fbb03b;">Preprocessing. </span></strong>During the taxonomy preprocessing, we annotated the visualization images from VAST and Info Vis in 2018 and 2010. After that, we have formed a taxonomy (Tpreprocessing) with 12 categories and 57 types.
+                                  <br><strong><span style="color:#fbb03b;">Statistics. </span></strong>The participants are presented a series of visualization images, and requested to select the visualization types contained in the images.
+                                  <br><strong><span style="color:#fbb03b;">Fine-tuning.</span></strong> To build a more balanced taxonomy with wide cover age,we fine-tuned the Tpreprocessing according to the results of statistics.
+                               <br>Type Expansion.
+                               <br>Type Merging.
+                               <br>TypeDeletion.
+                               <br>CategoryAdjustment.
+                               <br>Finally, we have obtained a new taxonomy with 12 categories and 30 types.
+                            </p> -->
+                        <table>
+                           <tr>
+                              <th>Categories</th>
+                              <th>Subtypes</th>
+                           </tr>
+                           <tr>
+                              <td>Area</td>
+                              <td>area chart, proportional area chart</td>
+                           </tr>
+                           <tr>
+                              <td>Bar</td>
+                              <td> bar chart </td>
+                           </tr>
+                           <tr>
+                              <td>Circle </td>
+                              <td> donut chart, pie chart, sector chart</td>
+                           </tr>
+                           <tr>
+                              <td>Diagram</td>
+                              <td> flow diagram, chord diagram, sankey diagram</td>
+                           </tr>
+                           <tr>
+                              <td>Statistic</td>
+                              <td>box plot, error bar, stripe graph</td>
+                           </tr>
+                           <tr>
+                              <td>Grid</td>
+                              <td> matrix, table, small multiple</td>
+                           </tr>
+                           <tr>
+                              <td>Line</td>
+                              <td> line chart, storyline, polar plot, parallel coordinate
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Map</td>
+                              <td> map</td>
+                           </tr>
+                           <tr>
+                              <td>Point</td>
+                              <td>scatter plot</td>
+                           </tr>
+                           <tr>
+                              <td>Units&Glyph</td>
+                              <td> heatmap, glyph-based visualization, unit visualization</td>
+                           </tr>
+                           <tr>
+                              <td>Word</td>
+                              <td>word cloud</td>
+                           </tr>
+                           <tr>
+                              <td>Tree&Graph </td>
+                              <td> graph, tree, treemap, hierarchical edge bundling, sunburst/icicle chart </td>
+                           </tr>
+                        </table>
+                        <!-- <img class="Taxonomy" src="images/table.png"> -->
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box">
+                        <i><img src="images/service3.png" alt="#" /></i>
+                        <h3>Visualization Type Annotation</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                        <p> Distinguishing visual representations and their variations is challenging and requires extensive knowledge in visualization. To ensure quality, we recruit senior visualization practitioners to annotate the subtypes (step B and C in the pipeline). 
+                           <br><strong><span style="color:#fbb03b;">Participants.</span></strong> We recruited 25
+                           senior visualization practitioners for visualization type annotation.
+                           <br><strong><span style="color:#fbb03b;">Task and Design.</span></strong> We designed a multi-label task for type annotation. We first developed an interface for the annotation tasks. The interface contained buttons for 30 different subtypes and a “submit” button. Besides, we provided an “others” category for exceptional cases.
+                        </p>
+                        <img class="Taxonomy" src="images/interface.png">
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+
+                     <div id="serv_hover" class="sub_METHODOLOGY_box">
+                        <i><img src="images/service4.png" alt="#" /></i>
+                        <h3>Bounding Box Annotation</h3>
+                     </div>
+                  </div>
+                  <div class="col-md-9">
+                     <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                        <p> We employed the crowd from a data annotation company, whose workers are well-trained for similar tasks (step D in the pipeline). 
+                           <br><strong><span style="color:#fbb03b;">Tasks.</span></strong> The challenge of drawing bounding boxes in our scenario is to recognize various visual representations and their variations. To reduce the mental load, each crowd worker was guided to focus on only one subtype. Each task included an image containing this specific subtype and a request to draw the bounding boxes around all visualizations of this subtype.
+                           <!-- <br><strong><span style="color:#fbb03b;">Criteria. </span></strong>For each single
+                           visualization, the bounding box should include all visible part of that visualization and be
+                           as tight as possible. -->
+                           <br><strong><span style="color:#fbb03b;">Quality Control.</span></strong>  For quality control, we adopted a sampling test on both batch level and worker level. We equally divided the 10,289 images into five batches and performed annotations batch by batch. The batch level sampling test was performed after completing a batch of annotations. We randomly sampled 10% of the results and evaluated the F1 score. If the F1 score was not higher than 95%, the whole batch of annotation would be rejected. The rejected batch would be annotated again until the F1 score reached 95%. The worker level sampling test was conducted during one batch of annotations, where 15% annotations of a worker would be randomly sampled for F1 score evaluation. If the F1 score was not higher than 95%, all finished tasks of this worker in this batch would be rejected and annotated again. For the workers who failed the sampling test, their sampling rate would increase by 5% at the next test.
+                           <!-- <br><strong><span style="color:#fbb03b;">Procedure & Results.</span></strong> We provided the
+                           10,289images with visualization type annotations, and the annotation team would submit the
+                           bounding box annotatons in four times. After the ﬁrst round of annotation, crowd workers
+                           became familiar to the criteria and deﬁnitions, and the following three rounds of annotations
+                           achieved 95.67%, 97.67%, and 97.39% F1 score. Finally, we have obtained 35,356bounding boxes. -->
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end services -->
+      <a name="Dataset"></a>
+      <div class="container">
+         <div class="Dataset1">
+            <div class="row d_flex">
+
+               <div class="col-md-6">
+                  <div class="titlepage">
+                     <h2>Dataset</h2>
+                     <p>We obtain a dataset with 12,267 images from IEEE VAST and IEEE InfoVis images with 12,057
+                        captions and 35,096 annotated boxes.</p>
+                     <a class="read_more" href="https://github.com/VisImages/data">Download the Dataset</a>
+                  </div>
+               </div>
+               <div class="col-md-5 offset-md-1">
+                  <div id="visimage" class="team_img">
+                     <figure><img src="images/sco.png" alt="#" /></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="row d_flex">
+               <!-- <div class="col-md-9"> -->
+               <div class="row">
+                  <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                     <div class="col-md-12" style="margin-left: auto;margin-right: auto;">
+                        <figure><img src="images/fig4.png" alt="#" /></figure>
+                     <p>Distribution of the visualization subtypes. The internal bars show the numbers of images containing each subtype, and the external bars show the numbers of bounding boxes of each subtype.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                     <div class="col-md-12">
+                        <figure><img src="images/fig5.png" alt="#" /></figure>
+                        <p> Comparison of the distribution of visualization categories from visualization publications,
+                           scientific publications, infographics, news media, and government and world organization. The
+                           data of the sources in light blue comes from the work of Borkin et al.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                     <div class="col-md-12" style="margin-left: auto;margin-right: auto;">
+                        <figure><img src="images/fig6.png" alt="#" /></figure>
+                     <p> To analyze the evoluation of each visualization type, we counted the bounding box number of
+                        each visualization type and visualized the distribution with horizon charts.
+                        The horizon charts were vertically aligned according to years, and horizontally aligned with a
+                        same height of 50.
+                        The darker the color, the larger the number of visualization.</p>
+                     </div>
+                  </div>
+               </div>
+                  <div class="sub_METHODOLOGY_box2 d_flex">
+                     <div class="col-md-6">
+                        <div class="fig7">
+                           <figure><img src="images/fig7.png" alt="#" /></figure>
+                        </div>
+                     </div>
+                     <!-- <div class="titlepage"> -->
+                     <div class="col-md-6">
+                        <p>We borrow the idea of confusion matrix to revisit our taxonomy and
+                           analyze the confusion between different subtypes. We define the confusion score between subtype a and subtype b based on the intuition.
+                           Taking donut chart and pie chart as an example, a donut chart might be recognized as a pie chart mistakenly in some cases. Therefore, the two subtypes tend to be selected by three different participants during annotation, and the majority voting will keep one and reject the other. To conclude, if a and b tend to be confused with each other, the possibility that a and b are selected at the same time but one is rejected is high. We define the confusion score based on the above observation:
+                           $$Score_{a,b}=P((a\in\mathbb{S}\wedge b\in\mathbb{E})\vee(b\in\mathbb{S}\wedge a\in\mathbb{E})|a\in\mathbb{S}\vee b\in\mathbb{S}),$$ where \(a\) and \(b\) are two different visualization types, and the \(\mathbb{S}\) and \(\mathbb{E}\) represent the set of selected types and the set of rejected types after majority voting, respectively.
+                        </p>
+                     </div>
+                     
+                     <!-- </div> -->
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- team -->
+      <!-- New Ideas  section -->
+      <a name="Scenario"></a>
+      <div class="ideas">
+         <div class="yellow_darkbg">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2>Usage Scenarios</h2>
+                        <!-- <a class="read_more" href="#">Read More</a> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- blog -->
+         <div class="blog">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <figure><img src="images/s1.png" alt="#" /></figure>
+                        <h3>Evolution of Color Used in VAST and InfoVis</h3>
+                        <p>The images are represented in <span style="color:#fbb03b;">CIELAB </span>color space, in
+                           which the color change is compatible to the human perception change.
+                           <br>The <span style="color:#fbb03b;">CIELAB </span>color space is composed of <span
+                              style="color:#fbb03b;">3 </span>dimensions. We divide each dimension into five bins and
+                           obtain a discrete color space with <span style="color:#fbb03b;">5×5×5 = 125</span> color
+                           values.
+                           <br>For the images, we count the pixel number of each color value. </p>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <figure><img src="images/s2.png" alt="#" /></figure>
+                        <h3>Visualization Types Preference of the Top Researchers</h3>
+                        <p>We explore the visualization preference of the top researchers in visualization community.
+                           <br>Here, different colors represent different types of visualization.
+                           <br>And researchers' preferences are related to their research topics.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <figure><img src="images/s3.png" alt="#" /></figure>
+                        <h3>Spatial Distribution of Visualizations in VA Systems</h3>
+                        <p> <span style="color:#fbb03b;">Firstly</span>, retrieve the images from the captions with the keywords “interface” and “system overview,” and build a caption classification dataset with two categories, i.e., "interface" and "others."
+                           <br><span style="color:#fbb03b;">Secondly</span>, we adopt term frequency-inverse document frequency (TF-IDF) to train a support vector
+                           machine (SVM) to classify the captions of “interface.”
+                           <br><span style="color:#fbb03b;">Finally</span>, plot the bounding boxes of each visualization types on the canvases and obtain the heatmaps.</p>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <figure><img src="images/s4.png" alt="#" /></figure>
+                        <h3>Faster R-CNN on VisImages
+                           <br> </h3>
+                        <p>To exhibit how VisImages can contribute to machine learning tasks, we <span style="color:#fbb03b;">train</span> an
+                           visualization detection model.
+                           <br>We perform Faster R-CNN on each subtype and adopt <span style="color:#fbb03b;">cross-subtype merging</span> to obtain multiple labels for each bounding box.
+                           <br> The false cases reveal a potential that researchers from machine learning and visualization work jointly to adapt the machine learning models for visualization scenarios.
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+   <!-- end New Ideas  section -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="copyright">
+            <div class="container">
+               <p>Copyright &copy VisImages</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
