@@ -70,7 +70,10 @@
                               <a class="nav-link" href="#">VisImages</a>
                            </li>
                            <li class="nav-item2">
-                              <a class="nav-link2" href="https://github.com/VisImages/data">Download</a>
+                              <a class="nav-link" href="http://3.16.54.204:3000">Explorer</a>
+                           </li>
+                           <li class="nav-item2">
+                              <a class="nav-link" href="https://github.com/VisImages/data">Download</a>
                            </li>
                         </ul>
                      </div>
@@ -98,10 +101,9 @@
                      <div class="row d_flex">
                         <div class="col-md-6">
                            <div class="text-bg">
-                              <h1> VisImages: Images in <br>Visualization Publications</h1>
-                              <p style="text-align: justify;">We aim to deliver a high-quality dataset with large scale
-                                 of visualization publication images and diverse categories of visualizations.</p>
-                              <a href="#p">Read the Paper</a>
+                              <h1> VisImages: A Corpus of Images from Visualization Publications</h1>
+                              <p style="text-align: justify;">In this paper, we build and make public an image dataset from visualization publications with comprehensive samples and rich annotations. </p>
+                              <a href="http://3.16.54.204:3000">Explore the images</a>
                            </div>
                         </div>
                         <div class="col-md-6">
@@ -122,7 +124,7 @@
                         <div class="col-md-6">
                            <div class="text-bg">
                               <h1> Pipeline</h1>
-                              <p>During the process, we adopt a series of measures, such as “gold standard,” majority voting, and sampling test, to ensure the data correctness.</p>
+                              <p>During the process, we adopt a series of measures, such as gold standard, majority voting, and sampling test, to ensure the data correctness.</p>
                               <a href="#Methodology">Read More</a>
                            </div>
                         </div>
@@ -199,7 +201,7 @@
                         <h2>Abstract</h2>
                         <!-- <div class="row"> -->
                         <p>
-                           Images in visualization publications contain rich information, such as novel visual designs, model details, and experiment results. Constructing such an image corpus can contribute to the community in many aspects, including literature analysis from the perspective of visual representations, empirical studies on visual memorability, and machine learning research for chart detection. This study presents VisImages, a high-quality and large-scale image corpus collected from visualization publications. VisImages contain fruitful and diverse annotations for each image, including captions, types of visual representations, and bounding boxes. First, we algorithmically extract the images associated with captions and manually correct the errors. Second, to categorize visualizations in publications, we extend and iteratively refine the existing taxonomy through a multi-round pilot study. Third, guided by this taxonomy, we invite senior visualization practitioners to annotate visual representations that appear in each image. In this process, we borrow techniques such as “gold standards” and majority voting for quality control. Finally, we recruit the crowd to draw bounding boxes for visual representations in the images. The resulting corpus contains 35,096 annotated visualizations from 12,267 images with 12,057 captions in 1397 papers from VAST and InfoVis. We demonstrate the usefulness of VisImages through the following four use cases: 1) analysis of color usage in VAST and InfoVis papers across years, 2) discussion of the researcher preference on visualization types, 3) spatial distribution analysis of visualizations in visual analytic systems, and 4) training visualization detection models.
+                           Images in visualization publications contain rich information, e.g., novel visualization designs and common combinations of visualizations. A systematic collection of these images can contribute to the community in many aspects, such as literature analysis and automated tasks for visualization. In this paper, we build and make public a dataset, VisImages, which collects 12,267 images with captions from 1,397 papers in IEEE InfoVis and VAST. Based on a refined taxonomy for visualizations in publications, the dataset includes 35,096 annotated visualizations, as well as their positions. We demonstrate the usefulness of VisImages through three use cases: 1) exploring and analyzing the evolution of visualizations with VisImages Explorer, 2) training and benchmarking models for visualization classification, and 3) localizing and recognizing visualizations in the images automatically.
                         </p>
                         <!-- </div> -->
                         <!-- <div style="height:70px;"></div> -->
@@ -234,16 +236,13 @@
                   </div>
                   <div class="col-md-9">
                      <div id="serv_hover" class="sub_METHODOLOGY_box2">
-                        <p>In this paper, we focus on 2D static visualizations rather than photos, comics, and 3D
-                           renderings.
-                           Therefore, we collected the images from VAST (IEEE Conference on Visual Analytics Science &
-                           Technology) and InfoVis (IEEE Conference on Information Visualization), and excluded SciVis
-                           (IEEE Conference on Scientific Visualization), where a large amount of 3D renderings exist.
+                        <p>
+                           In this study, we focused on 2D static visualizations and collected the images from VAST (IEEE Conference on Visual Analytics Science & Technology) and InfoVis (IEEE Conference on Information Visualization). We excluded SciVis (IEEE Conference on Scientific Visualization) papers since these papers generally comprise a large number of images depicting the results of 3D rendering, which are beyond the scope of our paper. 
                         </p>
 
                         <p>We borrowed a paper list from vispubdata.org, which has provided the title and digital object
                            identifier (DOI) of IEEE VIS papers. The vispubdata.org has assigned each paper a label among
-                           <i>Vis</i>, <i>VAST</i>, <i>InfoVis</i>, and <i>SciVis</i>. We selected the papers with
+                           <i>VIS</i>, <i>VAST</i>, <i>InfoVis</i>, and <i>SciVis</i>. We selected the papers with
                            the label of <i>VAST</i> and <i>InfoVis</i>.
                            <br>In total, we have processed <strong><span style="color:#fbb03b;">1397</span></strong>
                            papers in VAST and InfoVis from <strong><span style="color:#fbb03b;">1996</span></strong> to
@@ -417,31 +416,24 @@
                   <div id="serv_hover" class="sub_METHODOLOGY_box2">
                      <div class="col-md-12" style="margin-left: auto;margin-right: auto;">
                         <figure><img src="images/fig6.png" alt="#" /></figure>
-                     <p> To analyze the evoluation of each visualization type, we counted the bounding box number of
-                        each visualization type and visualized the distribution with horizon charts.
-                        The horizon charts were vertically aligned according to years, and horizontally aligned with a
-                        same height of 50.
-                        The darker the color, the larger the number of visualization.</p>
+                     <p> To analyze the evoluation of each visualization type, we counted the average number of the bounding boxes of each visualization type in the paper and visualized the distribution with horizon charts.
+                     The horizon charts were vertically aligned according to years, and horizontally aligned with a same height of 2. The darker the color, the larger the average number of the visualization.</p>
                      </div>
                   </div>
                </div>
-                  <div class="sub_METHODOLOGY_box2 d_flex">
-                     <div class="col-md-6">
-                        <div class="fig7">
-                           <figure><img src="images/fig7.png" alt="#" /></figure>
-                        </div>
+               <div class="row">
+                  <div id="serv_hover" class="sub_METHODOLOGY_box2">
+                     <div class="col-md-12">
+                        <figure><img src="images/fig7.png" alt="#" /></figure>
+                        <p> To measure the differences between visualization subtypes, we borrow the idea of confusion matrix from the machine learning field to revisit our taxonomy.
+                           The confusion matrix describes how easily people get confused about two visualization subtypes in the course of annotation. Specifically, for two subtypes a and b, we first counted the number of images that were annotated with visualization a or b in VisImages.
+                           We examine their raw annotation data during the process of visualization type annotation, where three annotators labelled all the possible visualization subtypes in the images and the subtypes selected by at least two annotators were finally accepted. That is, there exist examples which were not unanimously annotated as a subtype, indicating an inconsistency among the annotators. We model this inconsistency as confusion between visualization subtypes. 
+                           Therefore, the confusion score between subtypes a and b was calculated as follows:
+                           $$Score_{a,b}=1 - P(a\in\mathbb{S}\wedge b\in\mathbb{S}|a\in\mathbb{C}\wedge b\in\mathbb{C}),$$
+                           where \(\mathbb{C}\) and \(\mathbb{S}\) represent the set of selected types before and after the majority voting, respectively. </p>
                      </div>
-                     <!-- <div class="titlepage"> -->
-                     <div class="col-md-6">
-                        <p>We borrow the idea of confusion matrix to revisit our taxonomy and
-                           analyze the confusion between different subtypes. We define the confusion score between subtype a and subtype b based on the intuition.
-                           Taking donut chart and pie chart as an example, a donut chart might be recognized as a pie chart mistakenly in some cases. Therefore, the two subtypes tend to be selected by three different participants during annotation, and the majority voting will keep one and reject the other. To conclude, if a and b tend to be confused with each other, the possibility that a and b are selected at the same time but one is rejected is high. We define the confusion score based on the above observation:
-                           $$Score_{a,b}=P((a\in\mathbb{S}\wedge b\in\mathbb{E})\vee(b\in\mathbb{S}\wedge a\in\mathbb{E})|a\in\mathbb{S}\vee b\in\mathbb{S}),$$ where \(a\) and \(b\) are two different visualization types, and the \(\mathbb{S}\) and \(\mathbb{E}\) represent the set of selected types and the set of rejected types after majority voting, respectively.
-                        </p>
-                     </div>
-                     
-                     <!-- </div> -->
-                  
+                  </div>
+               </div>
                </div>
             </div>
          </div>
@@ -455,7 +447,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="titlepage">
-                        <h2>Usage Scenarios</h2>
+                        <h2>Use Cases</h2>
                         <!-- <a class="read_more" href="#">Read More</a> -->
                      </div>
                   </div>
@@ -466,49 +458,58 @@
          <div class="blog">
             <div class="container">
                <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="blog_box">
-                        <figure><img src="images/s1.png" alt="#" /></figure>
+                        <h3>VisImages Explorer for Exploring and Analyzing the Evolution of Visualizations</h3>
+                        <figure><img src="images/explorer.png" alt="#" /></figure>
+                        <p><br>VisImages Explorer. (A) is the search panel for keyword searching by the title and filtering by year, author, and conference. (B) is the image gallery displaying the images contained in the papers. (C) is the visualization streams showing the distribution of different visualizations across years. (D) is the caption clouds exhibiting the frequently occurring words in the captions of the filtered images. (E) and (F) show the visualization streams and caption clouds after selecting ''VAST" in the search panel, respectively. </br>
+                        </p>
+                     </div>
+                  </div><div class="col-md-14">
+                     <div class="blog_box">
+                        <h3>VisImages Classification</h3>
+                        <figure ><img src="images/classfication.png" width="500" height="600" alt="#"/></figure>
+                        <p><br>In this case, we show how VisImages can benefit visualization classification which has been adopted in many scenarios, such as visualization reconstruction and empirical studies. We first report the performance of the models on classifying visualizations with VisImages on two levels, namely, the category level (V-12) and the subtype level (V-30). We then compare VisImages with existing datasets to demonstrate the advantage of VisImages for visualization classification. Since a visualization can have multiple classes, we use both top-1 accuracy and top-3 accuracy as evaluation metrics.</br>
+                        </p>
+                     </div>
+                  </div><div class="col-md-12">
+                     <div class="blog_box">
+                        <figure><img src="images/case4_single.png" alt="#" /></figure>
+                        <h3>Visualization Detection on VisImages</h3>
+                        <p><br>Results of visualization detection with Faster R-CNN. (A) shows an example of table visualization. (B) and (C) show the predicted examples of the visualizations composed of multiple visualization types. (D) presents the cases of heatmaps and bar charts. (D1) and (D2) are recognized as heatmaps. (D3) shows the successfully recognized bar charts, and (D4) indicates the position of the bar charts that are proposed to predict but fail.</br>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <div class="blog_box">
                         <h3>Evolution of Color Used in VAST and InfoVis</h3>
-                        <p>The images are represented in <span style="color:#fbb03b;">CIELAB </span>color space, in
+                        <figure><img src="images/s1.png" alt="#" /></figure>
+                        <p><br>The images are represented in <span style="color:#fbb03b;">CIELAB </span>color space, in
                            which the color change is compatible to the human perception change.
-                           <br>The <span style="color:#fbb03b;">CIELAB </span>color space is composed of <span
+                           The <span style="color:#fbb03b;">CIELAB </span>color space is composed of <span
                               style="color:#fbb03b;">3 </span>dimensions. We divide each dimension into five bins and
                            obtain a discrete color space with <span style="color:#fbb03b;">5×5×5 = 125</span> color
-                           values.
-                           <br>For the images, we count the pixel number of each color value. </p>
+                           values.For the images, we count the pixel number of each color value. </br>
+                        </p>
                      </div>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="blog_box">
-                        <figure><img src="images/s2.png" alt="#" /></figure>
                         <h3>Visualization Types Preference of the Top Researchers</h3>
-                        <p>We explore the visualization preference of the top researchers in visualization community.
-                           <br>Here, different colors represent different types of visualization.
-                           <br>And researchers' preferences are related to their research topics.</p>
+                        <figure><img src="images/s2.png" alt="#" /></figure>
+                        <p><br>We explore the visualization preference of the top researchers in visualization community.
+                           Here, different colors represent different types of visualization. And researchers' preferences are related to their research topics.</br></p>
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-12">
                      <div class="blog_box">
-                        <figure><img src="images/s3.png" alt="#" /></figure>
                         <h3>Spatial Distribution of Visualizations in VA Systems</h3>
-                        <p> <span style="color:#fbb03b;">Firstly</span>, retrieve the images from the captions with the keywords “interface” and “system overview,” and build a caption classification dataset with two categories, i.e., "interface" and "others."
-                           <br><span style="color:#fbb03b;">Secondly</span>, we adopt term frequency-inverse document frequency (TF-IDF) to train a support vector
+                        <figure><img src="images/s3.png" alt="#" /></figure>
+                        <p><br><span style="color:#fbb03b;">Firstly</span>, retrieve the images from the captions with the keywords “interface” and “system overview,” and build a caption classification dataset with two categories, i.e., "interface" and "others."
+                           <span style="color:#fbb03b;">Secondly</span>, we adopt term frequency-inverse document frequency (TF-IDF) to train a support vector
                            machine (SVM) to classify the captions of “interface.”
-                           <br><span style="color:#fbb03b;">Finally</span>, plot the bounding boxes of each visualization types on the canvases and obtain the heatmaps.</p>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="blog_box">
-                        <figure><img src="images/s4.png" alt="#" /></figure>
-                        <h3>Faster R-CNN on VisImages
-                           <br> </h3>
-                        <p>To exhibit how VisImages can contribute to machine learning tasks, we <span style="color:#fbb03b;">train</span> an
-                           visualization detection model.
-                           <br>We perform Faster R-CNN on each subtype and adopt <span style="color:#fbb03b;">cross-subtype merging</span> to obtain multiple labels for each bounding box.
-                           <br> The false cases reveal a potential that researchers from machine learning and visualization work jointly to adapt the machine learning models for visualization scenarios.
-                        </p>
+                           <span style="color:#fbb03b;">Finally</span>, plot the bounding boxes of each visualization types on the canvases and obtain the heatmaps.</br></p>
                      </div>
                   </div>
 
